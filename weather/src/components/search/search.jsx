@@ -33,7 +33,7 @@ const Search = ({onSearchChange}) => {
             // Map the data to the required format
             const options = data.map((city) => ({
                 value: `${city.lat} ${city.lon}`,
-                label: `${city.name}, ${city.state}, ${city.country}`
+                label: `${city.name}, ${city.country}`
             }));
             
             // Return the options object as required by react-select-async-paginate

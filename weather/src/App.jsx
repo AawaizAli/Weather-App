@@ -8,7 +8,6 @@ import "./App.css";
 function App() {
     const [weather, setWeather] = useState({
         city: null,
-        state: null,
         country: null,
         temperature: null,
         feelsLike: null,
@@ -39,7 +38,6 @@ function App() {
                 // Update state with new data
                 setWeather({
                     city: city,
-                    state: state,
                     country: country,
                     temperature: data.main.temp,
                     feelsLike: Math.round(data.main.feels_like),
